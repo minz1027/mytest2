@@ -1,7 +1,13 @@
 shared:
     image: node:6
     settings:
-        email: d2lam@yahoo-inc.com
+        email: 
+            addresses:
+                - d2lam@yahoo-inc.com
+                - daolam112@gmail.com
+            statuses:
+                - SUCCESS
+                - FAILURE
 jobs:
     main:
         environment:
