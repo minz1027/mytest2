@@ -4,5 +4,8 @@ jobs:
     main:
         steps:
 #            - build: echo $SD_TOKEN
-             - meta-set: meta set foo barbar
-             - meta-get: meta get foo
+            - meta-set: meta set foo barbar
+            - meta-get: meta get foo
+    second:
+        steps:
+            - meta-get2: meta get foo
