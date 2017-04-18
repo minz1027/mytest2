@@ -1,10 +1,8 @@
 shared:
     image: node:6
-    settings:
-        email: d2lam@yahoo-inc.com
 jobs:
     main:
         steps:
-            - build: echo $SD_TOKEN
-#             - test: 'curl -H "Authorization: Bearer $SD_TOKEN" -H "Content-Type: application/json" -d "{\"name\": \"screwdriver/publish\",\"version\": \"1.0.0\",\"labels\": [\"test\"],\"description\": \"this is a template\",\"maintainer\": \"foo@bar.com\",\"config\": {\"steps\": [{\"echo\": \"echo hello\"}]}}" -X POST http://192.168.1.101:9001/v4/templates'
-#             - exit: exit 1
+#            - build: echo $SD_TOKEN
+             - meta-set: meta set foo barbar
+             - meta-get: meta get foo
