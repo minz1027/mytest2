@@ -6,6 +6,8 @@ jobs:
 #            - build: echo $SD_TOKEN
             - meta-set: meta set foo barbar
             - meta-get: meta get foo
+            - name: stuff
+              command: echo "hell"
     third:
         steps:
             - meta-get2: meta get foo
