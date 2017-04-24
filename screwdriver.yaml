@@ -10,6 +10,9 @@ jobs:
             - name: stuff
               command: echo "hell"
               alwaysRun: true
+            - name: sleep
+              command: sleep 200
+              alwaysRun: true
             - what: echo "bye"
     third:
         steps:
