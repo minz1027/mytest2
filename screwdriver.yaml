@@ -7,13 +7,10 @@ jobs:
             - meta-set: meta set foo barbar
             - meta-get: meta get foo
             - sleep: sleep 10
-            - exit: exit 1
-            - name: stuff
-              command: echo "hello"
-              alwaysRun: true
-            - name: sleep
-              command: sleep 200
-              alwaysRun: true
+            - exit: fail fail
+#            - name: stuff
+#              command: echo "hello"
+#              alwaysRun: true
             - what: echo "bye"
     third:
         steps:
