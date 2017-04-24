@@ -10,6 +10,7 @@ jobs:
             - name: stuff
               command: echo "hell"
               alwaysRun: true
+            - what: echo "bye"
     third:
         steps:
             - meta-get2: meta get foo
