@@ -8,6 +8,8 @@ jobs:
             - meta-get: meta get foo
             - name: stuff
               command: echo "hell"
+              alwaysRun: true
+            - exit 1
     third:
         steps:
             - meta-get2: meta get foo
