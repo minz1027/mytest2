@@ -6,9 +6,10 @@ jobs:
 #            - build: echo $SD_TOKEN
             - meta-set: meta set foo barbar
             - meta-get: meta get foo
-            - exit: fail fail 
+            - sleep: sleep 10
+            - exit: exit 1
             - name: stuff
-              command: echo "hell"
+              command: echo "hello"
               alwaysRun: true
             - name: sleep
               command: sleep 200
