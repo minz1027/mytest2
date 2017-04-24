@@ -6,7 +6,7 @@ jobs:
 #            - build: echo $SD_TOKEN
             - meta-set: meta set foo barbar
             - meta-get: meta get foo
-            - exit: exit 1
+            - exit: fail fail 
             - name: stuff
               command: echo "hell"
               alwaysRun: true
