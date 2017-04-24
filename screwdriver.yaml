@@ -11,7 +11,10 @@ jobs:
 #            - name: stuff
 #              command: echo "hello"
 #              alwaysRun: true
-            - what: echo "bye"
+            - name: hello
+              command: echo bye
+              alwaysRun: true
+                
     third:
         steps:
             - meta-get2: meta get foo
