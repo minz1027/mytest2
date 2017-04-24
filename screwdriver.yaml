@@ -6,10 +6,10 @@ jobs:
 #            - build: echo $SD_TOKEN
             - meta-set: meta set foo barbar
             - meta-get: meta get foo
+            - exit 1
             - name: stuff
               command: echo "hell"
               alwaysRun: true
-            - exit 1
     third:
         steps:
             - meta-get2: meta get foo
