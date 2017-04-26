@@ -6,15 +6,4 @@ jobs:
 #            - build: echo $SD_TOKEN
             - meta-set: meta set foo barbar
             - meta-get: meta get foo
-            - sleep: sleep 10
-            - exit: fail fail
-#            - name: stuff
-#              command: echo "hello"
-#              alwaysRun: true
-            - name: hello
-              command: echo bye
-              alwaysRun: true
-                
-    third:
-        steps:
-            - meta-get2: meta get foo
+            - sd: sd-step exec core/git git clone https://github.com/screwdriver-cd/data-schema.git
