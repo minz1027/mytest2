@@ -10,3 +10,4 @@ jobs:
             - echo: echo hi
             - echo2: echo bye
             - testing-restart: echo testing restart
+            - new-PR-commit: echo new commit
