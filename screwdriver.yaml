@@ -7,7 +7,6 @@ jobs:
 #            - meta-set: meta set foo barbar
 #            - meta-get: meta get foo
 #            - sd: sd-step exec core/git git clone https://github.com/screwdriver-cd/data-schema.git
-            - echo: echo hi
-            - echo2: echo bye
             - testing-restart: echo testing restart
             - new-PR-commit: echo new commit
+            - echo: echo blah
