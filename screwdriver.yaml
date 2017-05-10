@@ -4,8 +4,8 @@ jobs:
     main:
         steps:
 #            - build: echo $SD_TOKEN
-            - meta-set: meta set stuff.foo true
-            - meta-get: meta set stuff.bar false
+            - set-foo: meta set stuff.foo true
+            - set-bar: meta set stuff.bar false
             - meta-get: meta get stuff
 #            - sd: sd-step exec core/git git clone https://github.com/screwdriver-cd/data-schema.git
 #            - echo: echo hi
