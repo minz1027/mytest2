@@ -3,7 +3,7 @@ shared:
 jobs:
     main:
         steps:
-#            - build: echo $SD_TOKEN
+            - build: echo $SD_TOKEN
             - set-foo: meta set stuff.foo true
             - set-bar: meta set stuff.bar false
             - meta-get: meta get stuff
