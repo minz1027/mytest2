@@ -2,11 +2,4 @@ shared:
     image: node:6
 jobs:
     main:
-        steps:
-            - build: echo $SD_TOKEN
-            - set-foo: meta set stuff.foo true
-            - set-bar: meta set stuff.bar false
-            - meta-get: meta get stuff
-#            - sd: sd-step exec core/git git clone https://github.com/screwdriver-cd/data-schema.git
-#            - echo: echo hi
-#            - echo2: echo bye
+        template: tifftemplate2@1.3.1
