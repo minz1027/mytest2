@@ -3,3 +3,5 @@ shared:
 jobs:
     main:
         template: tifftemplate2@1.3.1
+        preecho: echo 'I am adding this'
+        postecho: echo 'bye bye'
