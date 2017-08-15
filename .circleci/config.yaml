@@ -4,6 +4,14 @@
 #
 version: 2
 jobs:
+  docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10 
+  working_directory: ~/repo
+  test:
+    steps:
+      - echo: echo hello world
+    
   build:
     docker:
       # specify the version you desire here
@@ -36,4 +44,11 @@ jobs:
       # run tests!
       - run: yarn test
 
-
+workflows:
+  version: 2
+  mine:
+    jobs:
+      - test:
+          requires:
+             - build
+      - build
