@@ -4,11 +4,11 @@
 #
 version: 2
 jobs:
-  docker:
+  test:
+    docker:
       # specify the version you desire here
       - image: circleci/node:7.10 
-  working_directory: ~/repo
-  test:
+    working_directory: ~/repo
     steps:
       - echo: echo hello world
   build:
