@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  test:
+  testblahblah:
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10 
@@ -31,7 +31,7 @@ workflows:
   version: 2
   mine:
     jobs:
-      - deploy
-      - test:
+      - testblahblah:
           requires:
              - deploy
+      - deploy
