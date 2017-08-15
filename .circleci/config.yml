@@ -10,7 +10,7 @@ jobs:
       - image: circleci/node:7.10 
     working_directory: ~/repo
     steps:
-      - echo: echo hello world
+      - run: echo hello world
   build:
     docker:
       # specify the version you desire here
@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - checkout
-      - echoblah: echo blah
+      - run: echo blah
 
 workflows:
   version: 2
