@@ -6,4 +6,6 @@ jobs:
         steps:
             - preecho: echo 'I am adding this'
             - echo: echo 'replacing this step'
-            - postecho: echo 'bye bye'
+            - postecho: echo 'bye bye' > /tmp/config
+            - gitstuff: ls
+            - git: git push
